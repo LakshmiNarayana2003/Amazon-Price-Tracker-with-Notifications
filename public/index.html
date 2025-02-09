@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Amazon Price Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Node.js Amazon Price Tracker</h1>
+        <div class="tech-stack">
+            <span class="badge">Node.js</span>
+            <span class="badge">Puppeteer</span>
+            <span class="badge">Express</span>
+        </div>
+        <div class="input-container">
+            <input type="text" id="amazonUrl" placeholder="Amazon Product URL" value="https://www.amazon.in/dp/B0CPTD2Z62">
+            <input type="number" id="priceLimit" placeholder="Price Limit" value="50000">
+            <button onclick="checkPrice()">Check Price</button>
+        </div>
+        <div id="result" class="result hidden">
+            <h2>Result:</h2>
+            <p id="priceResult"></p>
+        </div>
+        <div id="loading" class="loading hidden">
+            Checking price...
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
