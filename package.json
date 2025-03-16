@@ -1,5 +1,5 @@
 {
-  "name": "karthik",
+  "name": "amazon-price-tracker",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
